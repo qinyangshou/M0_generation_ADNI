@@ -1,0 +1,3 @@
+diffusion steps: 50
+model path: trained_models/2025-02-14T12-08-21_finetune_Mayo_combined
+num of samples: 20

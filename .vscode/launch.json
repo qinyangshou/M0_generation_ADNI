@@ -1,0 +1,18 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": ["--indir", "input_data/ADNI_data_sample", "--outdir", "generated_data", "--steps",  "50", "--num_averages", "20", "--model_name",
+            "2025-02-14T12-08-21_finetune_Mayo_combined", "--GPU", "0"],
+        }
+    ]
+}

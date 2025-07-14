@@ -1,0 +1,18 @@
+lightning:
+  callbacks:
+    image_logger:
+      target: main.ImageLogger
+      params:
+        batch_frequency: 500
+        max_images: 8
+        increase_log_steps: false
+        log_images_kwargs:
+          quantize_denoised: false
+          inpaint: false
+  trainer:
+    benchmark: true
+    gpus:
+    - 0
+    max_epochs: 2000
+    accelerator: ddp
+    resume_from_checkpoint: /ifs/loni/groups/loft/qinyang/ADNI_M0generation/M0_generation/trained_models/2024-03-05T15-59-47_M0_generation_conditional_LDM/checkpoints/last.ckpt
